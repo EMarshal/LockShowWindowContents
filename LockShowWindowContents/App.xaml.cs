@@ -4,7 +4,6 @@
 
 namespace LockShowWindowContents
 {
-    using System.Diagnostics.CodeAnalysis;
     using System.Windows;
 
     /// <summary>
@@ -12,5 +11,15 @@ namespace LockShowWindowContents
     /// </summary>
     public partial class App : Application
     {
+        /// <summary>
+        /// Raises the System.Windows.Application.Startup event.
+        /// Sets ShowWindowContents on startup.
+        /// </summary>
+        /// <param name="e">A StartupEventArgs that contains the event data.</param>
+        protected override void OnStartup(StartupEventArgs e)
+        {
+            base.OnStartup(e);
+            ShowWindowContents.SetShowWindowContents();
+        }
     }
 }
