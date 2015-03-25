@@ -4,8 +4,8 @@
 
 namespace LockShowWindowContents.Views
 {
+    using LockShowWindowContents.ViewModels;
     using System;
-    using System.Diagnostics.CodeAnalysis;
     using System.Windows;
     using System.Windows.Interop;
 
@@ -31,30 +31,9 @@ namespace LockShowWindowContents.Views
         {
             base.OnSourceInitialized(e);
             HwndSource src = PresentationSource.FromVisual(this) as HwndSource;
-            src.AddHook(this.WndProc);
+            src.AddHook(((MainViewModel)DataContext).WndProc);
             this.Visibility = Visibility.Hidden;
             this.Closing += this.MainWindow_Closing;
-        }
-
-        /// <summary>
-        /// Callback function to process messages.
-        /// SetShowDragEnabled if ShowDragEnabled is "Show window contents while dragging" is changed
-        /// </summary>
-        /// <param name="hwnd">Handle to the window to which the message was sent.</param>
-        /// <param name="msg">The message, must equal 26 to SetShowDragEnabled.</param>
-        /// <param name="wParam">Value depends on sender context, must point to 37 to SetShowDragEnabled.</param>
-        /// <param name="lParam">Value depends on sender context, not used.</param>
-        /// <param name="handled">Indicates if message has been handled.</param>
-        /// <returns>Null pointer.</returns>
-        [SuppressMessage("Microsoft.StyleCop.CSharp.NamingRules", "SA1305:FieldNamesMustNotUseHungarianNotation", Justification = "wParam and lParam are standard notation.")]
-        private IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
-        {
-            if (msg == 26 && wParam.ToInt32() == 37)
-            {
-                ShowWindowContents.SetShowWindowContents();
-            }
-
-            return IntPtr.Zero;
         }
 
         /// <summary>
@@ -65,7 +44,7 @@ namespace LockShowWindowContents.Views
         private void MainWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             HwndSource src = PresentationSource.FromVisual(this) as HwndSource;
-            src.RemoveHook(this.WndProc);
+            src.RemoveHook(((MainViewModel)DataContext).WndProc);
         }
     }
 }

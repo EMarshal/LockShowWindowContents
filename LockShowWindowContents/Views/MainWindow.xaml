@@ -1,5 +1,7 @@
 ﻿<Window x:Class="LockShowWindowContents.Views.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:LockShowWindowContents.ViewModels"
+        DataContext="local:MainViewModel"
         Height="0" Width="0">
 </Window>
