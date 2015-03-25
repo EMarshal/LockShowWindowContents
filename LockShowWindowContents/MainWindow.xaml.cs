@@ -12,7 +12,7 @@ namespace LockShowWindowContents
     /// <summary>
     /// Interaction logic for <c>MainWindow.xaml</c>
     /// </summary>
-    public partial class MainWindow : Window
+    public sealed partial class MainWindow : Window
     {
         /// <summary>
         /// Initializes a new instance of the MainWindow class.

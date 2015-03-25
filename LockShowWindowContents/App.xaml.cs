@@ -5,17 +5,26 @@
 namespace LockShowWindowContents
 {
     using Hardcodet.Wpf.TaskbarNotification;
+    using System;
     using System.Windows;
 
     /// <summary>
     /// Interaction logic for <c>App.xaml</c>
     /// </summary>
-    public partial class App : Application
+    public sealed partial class App : Application, IDisposable
     {
         /// <summary>
         /// Taskbar icon.
         /// </summary>
         private TaskbarIcon tb;
+
+        /// <summary>
+        /// Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+        /// </summary>
+        public void Dispose()
+        {
+            this.tb.Dispose();
+        }
 
         /// <summary>
         /// Raises the System.Windows.Application.Startup event.

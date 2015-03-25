@@ -11,7 +11,7 @@ namespace LockShowWindowContents
     /// <summary>
     /// Command to exit the application.
     /// </summary>
-    public class ExitCommand : ICommand
+    public sealed class ExitCommand : ICommand
     {
         /// <summary>
         /// Not used.
