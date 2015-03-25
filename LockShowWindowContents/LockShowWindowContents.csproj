@@ -52,10 +52,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="ExitCommand.cs" />
+    <Compile Include="DelegateCommand.cs" />
+    <Compile Include="NotifyIconViewModel.cs" />
     <Compile Include="NativeMethods.cs" />
     <Compile Include="ShowWindowContents.cs" />
-    <Page Include="Dictionary.xaml">
+    <Page Include="NotifyIconResources.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

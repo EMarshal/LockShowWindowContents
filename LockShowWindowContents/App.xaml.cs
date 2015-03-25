@@ -35,7 +35,7 @@ namespace LockShowWindowContents
         {
             base.OnStartup(e);
             ShowWindowContents.SetShowWindowContents();
-            this.tb = (TaskbarIcon)FindResource("MyNotifyIcon");
+            this.tb = (TaskbarIcon)FindResource("NotifyIcon");
         }
     }
 }

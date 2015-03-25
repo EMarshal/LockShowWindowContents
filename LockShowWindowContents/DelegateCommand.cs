@@ -1,34 +1,38 @@
-﻿// <copyright file="ExitCommand.cs" company="Éli Marshal">
+﻿// <copyright file="DelegateCommand.cs" company="Éli Marshal">
 //     Copyright (c) Éli Marshal. All rights reserved.
 // </copyright>
 
 namespace LockShowWindowContents
 {
     using System;
-    using System.Windows;
     using System.Windows.Input;
 
     /// <summary>
-    /// Command to exit the application.
+    /// Simple DelegateCommand base.
     /// </summary>
-    public sealed class ExitCommand : ICommand
+    public class DelegateCommand : ICommand
     {
         /// <summary>
-        /// Not used.
+        /// Adds or removes <c>RequerySuggested</c> from CommandManager.
         /// </summary>
         public event EventHandler CanExecuteChanged
         {
-            add { }
-            remove { }
+            add { CommandManager.RequerySuggested += value; }
+            remove { CommandManager.RequerySuggested -= value; }
         }
 
         /// <summary>
-        /// Exits the application.
+        /// Gets or sets action to execute.
+        /// </summary>
+        public Action CommandAction { get; set; }
+
+        /// <summary>
+        /// Executes the command.
         /// </summary>
         /// <param name="parameter">The parameter is not used.</param>
         public void Execute(object parameter)
         {
-            Application.Current.Shutdown();
+            this.CommandAction();
         }
 
         /// <summary>
