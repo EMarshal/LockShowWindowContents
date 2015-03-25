@@ -2,7 +2,7 @@
 //     Copyright (c) Éli Marshal. All rights reserved.
 // </copyright>
 
-namespace LockShowWindowContents
+namespace LockShowWindowContents.ViewModels
 {
     using System.Windows;
     using System.Windows.Input;
