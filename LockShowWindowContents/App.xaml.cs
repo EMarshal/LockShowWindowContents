@@ -5,6 +5,7 @@
 namespace LockShowWindowContents
 {
     using Hardcodet.Wpf.TaskbarNotification;
+    using LockShowWindowContents.Helpers;
     using System;
     using System.Windows;
 

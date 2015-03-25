@@ -2,7 +2,7 @@
 //     Copyright (c) Éli Marshal. All rights reserved.
 // </copyright>
 
-namespace LockShowWindowContents
+namespace LockShowWindowContents.Helpers
 {
     /// <summary>
     /// This program enables the "Show window contents while dragging" setting if it isn't already enabled.

@@ -4,6 +4,7 @@
 
 namespace LockShowWindowContents.ViewModels
 {
+    using LockShowWindowContents.Helpers;
     using System;
     using System.Diagnostics.CodeAnalysis;
 

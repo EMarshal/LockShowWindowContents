@@ -55,8 +55,8 @@
     <Compile Include="DelegateCommand.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="ViewModels\NotifyIconViewModel.cs" />
-    <Compile Include="NativeMethods.cs" />
-    <Compile Include="ShowWindowContents.cs" />
+    <Compile Include="Helpers\NativeMethods.cs" />
+    <Compile Include="Helpers\ShowWindowContents.cs" />
     <Page Include="Views\NotifyIconResources.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
