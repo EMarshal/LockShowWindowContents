@@ -7,7 +7,7 @@ namespace LockShowWindowContents
     /// <summary>
     /// This program enables the "Show window contents while dragging" setting if it isn't already enabled.
     /// </summary>
-    public static sealed class ShowWindowContents
+    public static class ShowWindowContents
     {
         /// <summary>
         /// Enables "Show window contents" if it isn't already enabled.

@@ -9,7 +9,7 @@ namespace LockShowWindowContents
     /// <summary>
     /// Contains native methods for SystemParametersInfo to use for SPI_SETDRAGFULLWINDOWS and SPI_GETDRAGFULLWINDOWS
     /// </summary>
-    public static sealed class NativeMethods
+    public static class NativeMethods
     {
         /// <summary>
         /// Constant 0x01.
