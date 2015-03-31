@@ -10,27 +10,27 @@ namespace LockShowWindowContents.Helpers
     /// <summary>
     /// Contains native methods for SystemParametersInfo to use for SPI_SETDRAGFULLWINDOWS and SPI_GETDRAGFULLWINDOWS
     /// </summary>
-    public static class NativeMethods
+    internal static class NativeMethods
     {
         /// <summary>
         /// Constant 0x01.
         /// </summary>
-        public const short SPIF_UPDATEINIFILE = 0x01;
+        internal const short SPIF_UPDATEINIFILE = 0x01;
 
         /// <summary>
         /// Constant 0x02.
         /// </summary>
-        public const short SPIF_SENDCHANGE = 0x02;
+        internal const short SPIF_SENDCHANGE = 0x02;
 
         /// <summary>
         /// Constant 0x25.
         /// </summary>
-        public const short SPI_SETDRAGFULLWINDOWS = 0x25;
+        internal const short SPI_SETDRAGFULLWINDOWS = 0x25;
 
         /// <summary>
         /// Constant 0x26.
         /// </summary>
-        public const short SPI_GETDRAGFULLWINDOWS = 0x26;
+        internal const short SPI_GETDRAGFULLWINDOWS = 0x26;
 
         /// <summary>
         /// SystemParametersInfo call.
@@ -43,7 +43,7 @@ namespace LockShowWindowContents.Helpers
         [SuppressMessage("StyleCop.CSharp.DocumentationRules", "SA1625:ElementDocumentationMustNotBeCopiedAndPasted",
             Justification = "Standard documentation.")]
         [DllImport("user32.dll", SetLastError = true)]
-        public static extern bool SystemParametersInfo(int uAction, int uParam, ref bool lpvParam, int fuWinIni);
+        internal static extern bool SystemParametersInfo(int uAction, int uParam, ref bool lpvParam, int fuWinIni);
 
         /// <summary>
         /// SystemParametersInfo call.
@@ -56,6 +56,6 @@ namespace LockShowWindowContents.Helpers
         [SuppressMessage("StyleCop.CSharp.DocumentationRules", "SA1625:ElementDocumentationMustNotBeCopiedAndPasted",
             Justification = "Standard documentation.")]
         [DllImport("user32.dll", SetLastError = true, CharSet = CharSet.Unicode)]
-        public static extern bool SystemParametersInfo(int uAction, bool uParam, string lpvParam, int fuWinIni);
+        internal static extern bool SystemParametersInfo(int uAction, bool uParam, string lpvParam, int fuWinIni);
     }
 }
