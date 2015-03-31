@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LockShowWindowContents", "LockShowWindowContents\LockShowWindowContents.csproj", "{33EBC0E8-5DBE-4BFC-BDC9-36D2743B5BAB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LockShowWindowContents", "LockShowWindowContents\LockShowWindowContents.csproj", "{E75A97F4-87C9-4621-81C9-E7D822C95463}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{33EBC0E8-5DBE-4BFC-BDC9-36D2743B5BAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{33EBC0E8-5DBE-4BFC-BDC9-36D2743B5BAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{33EBC0E8-5DBE-4BFC-BDC9-36D2743B5BAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{33EBC0E8-5DBE-4BFC-BDC9-36D2743B5BAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E75A97F4-87C9-4621-81C9-E7D822C95463}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E75A97F4-87C9-4621-81C9-E7D822C95463}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E75A97F4-87C9-4621-81C9-E7D822C95463}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E75A97F4-87C9-4621-81C9-E7D822C95463}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
