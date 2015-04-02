@@ -1,5 +1,5 @@
 ﻿// <copyright file="Program.cs" company="Éli Marshal">
-// Copyright (c) Éli Marshal. All rights reserved.
+//     Copyright (c) Éli Marshal. All rights reserved.
 // </copyright>
 
 namespace LockShowWindowContents
