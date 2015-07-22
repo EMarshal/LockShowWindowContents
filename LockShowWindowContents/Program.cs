@@ -4,7 +4,7 @@
 
 namespace LockShowWindowContents
 {
-    using LockShowWindowContents.Helpers;
+    using Helpers;
     using System;
 
     /// <summary>
