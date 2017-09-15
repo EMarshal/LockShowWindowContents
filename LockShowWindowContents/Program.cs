@@ -2,11 +2,11 @@
 //     Copyright (c) Éli Marshal. All rights reserved.
 // </copyright>
 
+using LockShowWindowContents.Helpers;
+using System;
+
 namespace LockShowWindowContents
 {
-    using Helpers;
-    using System;
-
     /// <summary>
     /// The main class to set "Show window contents while dragging" console-style.
     /// </summary>

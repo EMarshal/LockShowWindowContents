@@ -2,11 +2,11 @@
 //     Copyright (c) Éli Marshal. All rights reserved.
 // </copyright>
 
+using System.Diagnostics.CodeAnalysis;
+using System.Runtime.InteropServices;
+
 namespace LockShowWindowContents.Helpers
 {
-    using System.Diagnostics.CodeAnalysis;
-    using System.Runtime.InteropServices;
-
     /// <summary>
     /// Contains native methods for SystemParametersInfo to use for SPI_SETDRAGFULLWINDOWS and SPI_GETDRAGFULLWINDOWS
     /// </summary>
@@ -40,7 +40,9 @@ namespace LockShowWindowContents.Helpers
         /// <param name="lpvParam">Depends on system parameter.</param>
         /// <param name="fuWinIni">WIN.INI update flag.</param>
         /// <returns>True if successful</returns>
-        [SuppressMessage("StyleCop.CSharp.DocumentationRules", "SA1625:ElementDocumentationMustNotBeCopiedAndPasted",
+        [SuppressMessage(
+            "StyleCop.CSharp.DocumentationRules",
+            "SA1625:ElementDocumentationMustNotBeCopiedAndPasted",
             Justification = "Standard documentation.")]
         [DllImport("user32.dll", SetLastError = true)]
         internal static extern bool SystemParametersInfo(int uAction, int uParam, ref bool lpvParam, int fuWinIni);
@@ -53,7 +55,9 @@ namespace LockShowWindowContents.Helpers
         /// <param name="lpvParam">Depends on system parameter.</param>
         /// <param name="fuWinIni">WIN.INI update flag.</param>
         /// <returns>True if successful</returns>
-        [SuppressMessage("StyleCop.CSharp.DocumentationRules", "SA1625:ElementDocumentationMustNotBeCopiedAndPasted",
+        [SuppressMessage(
+            "StyleCop.CSharp.DocumentationRules",
+            "SA1625:ElementDocumentationMustNotBeCopiedAndPasted",
             Justification = "Standard documentation.")]
         [DllImport("user32.dll", SetLastError = true, CharSet = CharSet.Unicode)]
         internal static extern bool SystemParametersInfo(int uAction, bool uParam, string lpvParam, int fuWinIni);
