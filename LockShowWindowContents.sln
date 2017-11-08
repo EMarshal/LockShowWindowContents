@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.15
+VisualStudioVersion = 15.0.27004.2008
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LockShowWindowContents", "LockShowWindowContents\LockShowWindowContents.csproj", "{A182D1C1-0026-4723-A0A9-49A29D8C293B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LockShowWindowContents", "LockShowWindowContents\LockShowWindowContents.csproj", "{00B9A46E-D44E-4F4E-9B90-81C4DCC056EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A182D1C1-0026-4723-A0A9-49A29D8C293B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A182D1C1-0026-4723-A0A9-49A29D8C293B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A182D1C1-0026-4723-A0A9-49A29D8C293B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A182D1C1-0026-4723-A0A9-49A29D8C293B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00B9A46E-D44E-4F4E-9B90-81C4DCC056EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00B9A46E-D44E-4F4E-9B90-81C4DCC056EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00B9A46E-D44E-4F4E-9B90-81C4DCC056EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00B9A46E-D44E-4F4E-9B90-81C4DCC056EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
