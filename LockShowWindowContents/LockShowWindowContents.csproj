@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{00B9A46E-D44E-4F4E-9B90-81C4DCC056EB}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>WinExe</OutputType>
     <RootNamespace>LockShowWindowContents</RootNamespace>
     <AssemblyName>LockShowWindowContents</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
