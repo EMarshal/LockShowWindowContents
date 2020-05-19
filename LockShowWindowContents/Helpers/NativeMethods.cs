@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 namespace LockShowWindowContents.Helpers
 {
     /// <summary>
-    /// Contains native methods for SystemParametersInfo to use for SPI_SETDRAGFULLWINDOWS and SPI_GETDRAGFULLWINDOWS
+    /// Contains native methods for SystemParametersInfo to use for SPI_SETDRAGFULLWINDOWS and SPI_GETDRAGFULLWINDOWS.
     /// </summary>
     internal static class NativeMethods
     {
@@ -39,7 +39,7 @@ namespace LockShowWindowContents.Helpers
         /// <param name="uParam">Depends on system parameter.</param>
         /// <param name="lpvParam">Depends on system parameter.</param>
         /// <param name="fuWinIni">WIN.INI update flag.</param>
-        /// <returns>True if successful</returns>
+        /// <returns>True if successful.</returns>
         [SuppressMessage(
             "StyleCop.CSharp.DocumentationRules",
             "SA1625:ElementDocumentationMustNotBeCopiedAndPasted",
@@ -54,7 +54,7 @@ namespace LockShowWindowContents.Helpers
         /// <param name="uParam">Depends on system parameter.</param>
         /// <param name="lpvParam">Depends on system parameter.</param>
         /// <param name="fuWinIni">WIN.INI update flag.</param>
-        /// <returns>True if successful</returns>
+        /// <returns>True if successful.</returns>
         [SuppressMessage(
             "StyleCop.CSharp.DocumentationRules",
             "SA1625:ElementDocumentationMustNotBeCopiedAndPasted",
