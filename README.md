@@ -1,5 +1,7 @@
 #### LockShowWindowContents
 
+#### This is archived, as I no longer require the Citrix client
+
 Windows application for enabling the Windows option "Show window contents while dragging".
 
 Developed to work around bug in Citrix client which periodically disables "Show window contents while dragging" option on client system.
